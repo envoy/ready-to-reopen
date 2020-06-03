@@ -1,0 +1,65 @@
+@import url("//hello.myfonts.net/count/3af984");
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_E_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_E_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_E_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_E_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_E_0.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_3_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_3_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_3_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_3_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_3_0.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_6_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_6_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_6_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_6_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_6_0.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_A_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_A_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_A_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_A_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_A_0.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_7_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_7_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_7_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_7_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_7_0.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_C_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_C_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_C_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_C_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_C_0.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_1_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_1_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_1_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_1_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_1_0.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_5_0.eot');
+  src: url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_5_0.eot?#iefix') format('embedded-opentype'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_5_0.woff2') format('woff2'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_5_0.woff') format('woff'),url('https://envoy-fonts.s3.amazonaws.com/sofia-pro/3AF984_5_0.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}

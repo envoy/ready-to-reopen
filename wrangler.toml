@@ -1,0 +1,19 @@
+# Per ashley williams, everything in wrangler.toml (including account_id and zone_id) is committable to publicly accessible version control
+# https://github.com/cloudflare/wrangler/issues/209#issuecomment-541654484
+
+name = "envoy-rto"
+type = "webpack"
+account_id = "56ab6491573957a8cf0731c17c0ad26f"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "_site"
+entry-point = "workers-site"
+
+[env.production]
+# The ID of your domain you're deploying to
+zone_id = "4bab90b4b44b9ae5b2dfb74bb391c001"
+# The route pattern your Workers application will be served at
+route = "readytoreopen.envoy.com/*"

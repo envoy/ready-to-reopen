@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} &bull; Envoy Ready to Reopen</title>
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+    <script src="/assets/scripts/anime.min.js"></script>
+    <script src="/assets/scripts/site.js"></script>
+
+  </head>
+  <body class="max-w-6xl m-auto text-carbon">
+    <header class="w-full flex justify-between md:mt-8 p-4 xl:px-0 fixed md:relative top-0 bg-white md:bg-transparent z-10 border-b pb-4">
+      <a href="/"><img src="../assets/images/logo.svg" alt="Envoy" /></a>
+      <ul class="flex relative list-none" style="top: 2px;">
+        {% for nav in site.data.navigation %}
+          <li class="ml-6 md:ml-8"><a href="{{ nav.url }}" class="{% if nav.url == page.url %}text-brand {% else %}text-carbon {% endif %}hover:text-brand text-base md:text-lg">{{ nav.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </header>
+
+    <!-- <header class="w-full flex md:mt-8 p-4 md:py-0 xl:px-0 fixed md:relative top-0 bg-white md:bg-transparent z-10">
+      <b>Return to the Office Plan</b>
+    </header> -->
+
+    <div id="wrapper" class="w-full flex-none md:flex mt-40 md:mt-32 px-4 xl:px-0">
+      {{ content }}
+    </div>
+
+    <footer class="w-full border-arctic border-t-2 pt-8 mt-24 pb-16 text-sm text-carbon60">
+      Copyright &copy; 2020 <a class="text-carbon60 hover:text-brand" href="http://envoy.com">Envoy</a>.
+      The material in this work is licensed under a <a rel="license" class="text-carbon60 hover:text-brand" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer>
+
+    {% for javascript in page.scripts %}
+      <script src="{{ javascript }}"></script>
+    {% endfor %}
+  </body>
+</html>

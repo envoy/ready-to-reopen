@@ -1,0 +1,165 @@
+---
+---
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Base styling */
+
+html {
+  font-family: 'SofiaPro', 'sans-serif';
+  @apply antialiased;
+}
+
+h1 {
+  @apply text-carbon font-medium m-0 leading-none text-6xl;
+}
+
+h2 {
+  @apply text-carbon font-medium m-0 mb-4 leading-none text-6xl;
+}
+
+@screen sm {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5.75rem;
+    @apply mb-8 font-normal;
+  }
+}
+
+h3 {
+  @apply text-carbon font-semibold m-0 mb-4 leading-none text-4xl;
+}
+
+h4 {
+  @apply text-carbon60 font-semibold m-0 mb-4 leading-tight text-2xl;
+}
+
+h5 {
+  @apply text-carbon font-medium m-0 mb-4 leading-tight text-base;
+}
+
+a {
+  @apply transition duration-300 ease-in-out text-brand;
+}
+
+ul {
+  @apply list-disc list-inside text-base;
+}
+
+
+/* Component styling */
+
+.btn {
+  @apply text-base text-white bg-brand rounded-lg inline-block px-6 py-2 font-bold;
+}
+
+.btn:hover {
+  background-color: #e23c32;
+}
+
+.icon-x {
+  @apply inline-block mr-2 relative;
+  margin-top: -3px;
+}
+
+.font-weights-section li {
+  @apply text-4xl mb-6 leading-none;
+}
+
+@screen sm {
+  .font-weights-section li {
+    @apply text-5xl;
+  }
+}
+
+.palette-notes {
+  @apply absolute top-0 left-0 ml-2 mt-2;
+  font-size: 0.5rem;
+}
+
+.palette-notes.tighter {
+  @apply ml-2 mt-2;
+}
+
+.palette-notes li {
+  @apply mb-1;
+}
+
+.sidebar-nav {
+  top: 122px;
+}
+
+@screen md {
+  .sidebar-nav {
+    @apply top-auto;
+  }
+}
+
+.js-parent .js-children {
+  @apply transition-all duration-300 ease-in-out;
+  max-height: 0;
+  opacity: 0;
+}
+
+.js-parent.js-open .js-children {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.js-mobile-nav img {
+  @apply transition duration-300 ease-in-out;
+}
+
+.js-mobile-nav.js-open img {
+  transform: rotate(180deg);
+}
+
+.example-box {
+  @apply bg-arctic p-8 text-base;
+}
+
+@screen md {
+  .example-box {
+    @apply p-12;
+  }
+  .example-box.--small {
+    @apply p-6;
+  }
+}
+
+/* General styling */
+
+p {
+  @apply leading-normal text-lg;
+}
+
+#content ul {
+  @apply text-lg my-4 mb-8 list-disc list-outside pl-8;
+}
+
+#content p + p {
+  @apply mt-8;
+}
+
+#content p + h4 {
+  @apply mt-12;
+}
+
+.js-current:before {
+  @apply absolute bg-brand rounded-full;
+  left: -1rem;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-top: 7px;
+}
+
+.js-tooltip {
+  @apply fixed px-4 py-2 bg-carbon rounded-full font-medium text-sm text-white;
+  left: 50%;
+  margin-left: -54px;
+  bottom: 2rem;
+}

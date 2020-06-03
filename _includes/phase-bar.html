@@ -1,0 +1,12 @@
+<div class="mt-8 flex justify-between space-x-4">
+{% for i in (0..4) %}
+  {% assign phase_column = i | plus: 2 %}
+  {% assign title = site.data.phases.values[1][phase_column] %}
+  {% assign color = site.data.phases.values[2][phase_column] %}
+
+  <a class="flex-1 p-4 rounded hover:shadow-lg shadow" style="background-color: {{ color }}" href="/phases/{{ i }}">
+    <h3 class="text-xl text-carbon mb-1">Phase {{ i }}</h3>
+    <p class="text-base text-carbon leading-tight">{{ title }}</p>
+  </a>
+{% endfor %}
+</div>
