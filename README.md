@@ -1,5 +1,5 @@
-# brand-book
-Jekyll based website for hosting our Return to the Office docs. Managed by WPT.
+# Ready to Reopen Portal
+Jekyll based website for hosting our Return to the Office docs. Managed by WPT. Forked from [envoy/brand-book](https://github.com/envoy/brand-book)
 
 ## Local Installation
 1. Clone `git clone git@github.com:envoy/rto.git`
