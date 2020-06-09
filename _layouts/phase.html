@@ -8,10 +8,14 @@ phase: 0
 <div id="sidebar" class="w-48 mr-40">
   <div class="flex justify-between items-center md:hidden fixed w-full p-4 left-0 top-0 z-20 bg-white mt-16 border-t border-b cursor-pointer border-arctic js-mobile-nav">
     <div><b class="font-semibold js-nav-category">Logo</b><span class="js-nav-section"></span></div>
-    <img src="../assets/images/ic-arrow-dwn.svg" />
+    <img src="/assets/images/ic-arrow-dwn.svg" />
   </div>
   <div class="fixed sidebar-nav w-full md:w-auto left-0 md:left-auto p-4 md:p-0 bg-white md:bg-transparent z-30 md:z-auto opacity-0 md:opacity-100 h-0 md:h-auto overflow-hidden md:overflow-visible">
-    <h5>Phase {{page.phase}}</h5>
+    <header class="phase-nav opacity-0 transition-opacity duration-500 ease-in-out">
+      {% include phase-badge.html id=page.phase color=phase_color css="text-sm px-4" %}
+      <h5>{{ site.data.phases.values[1][phase_column] }}</h5>
+    </header>
+
     <ul>
     {% for phases_hash in site.data.phases.values offset: 4 %}
     {% assign category = phases_hash[0] %}
@@ -42,25 +46,23 @@ phase: 0
 </div>
 
 <div id="content" class="w-full">
-  <div class="float-right space-x-2">
+  <!-- <div class="float-right space-x-2">
     {% if page.prev_phase %}
-    <a href="{{ page.prev_phase }}" class="px-4 py-3 rounded border border-solid border-arctic text-carbon60 hover:border-carbon60">&larr; Previous</a>
+    <a href="/phases/{{ page.prev_phase }}" class="px-4 py-3 rounded border border-solid border-arctic text-carbon60 hover:border-carbon60">&larr; Previous</a>
     {% endif %}
     {% if page.next_phase %}
-    <a href="{{ page.next_phase }}" class="px-4 py-3 rounded border border-solid border-arctic text-carbon60 hover:border-carbon60">Next &rarr;</a>
+    <a href="/phases/{{ page.next_phase }}" class="px-4 py-3 rounded border border-solid border-arctic text-carbon60 hover:border-carbon60">Next &rarr;</a>
     {% endif %}
-  </div>
+  </div> -->
 
-  <h4 style="background-color: {{ phase_color }}" class="rounded-md text-carbon p-2 px-4 align-middle inline-block">
-    Phase {{page.phase}}
-  </h4>
+  {% include phase-badge.html id=page.phase color=phase_color css="text-xl px-4" %}
   <h2>
     {{ site.data.phases.values[1][phase_column]}}
     {% if current_phase contains page.phase %}
       <span class="rounded-md bg-cilantro text-white text-sm p-2 py-1 align-middle ml-2 uppercase">Current Phase</span>
     {% endif %}
   </h2>
-  <p class="mb-8 text-2xl">
+  <p class="mb-8 text-2xl" id="phase-intro-text">
     {{ site.data.phases.values[3][phase_column] }}
   </p>
 
@@ -87,7 +89,7 @@ phase: 0
     <!-- <div class="flex-basis40 text-lg text-carbon60 font-bold pr-12"> -->
       <!-- {{ title }} -->
     <!-- </div> -->
-    <div class="text-carbon leading-snug">
+    <div class="text-carbon80 leading-snug">
       {{ content | markdownify }}
     </div>
   </div>

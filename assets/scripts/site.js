@@ -3,6 +3,11 @@ $('.js-parent').first().addClass('js-open');
 
 function setCurrentNav(s) {
   var scrollVal = $(document).scrollTop();
+  if (scrollVal > $('#phase-intro-text').position().top) {
+    $('header.phase-nav').removeClass('opacity-0');
+  } else {
+    $('header.phase-nav').addClass('opacity-0');
+  }
   $(".js-category").each(function() {
     var offset = ($(this).position().top) - 145;
     var id = $(this).attr("id");

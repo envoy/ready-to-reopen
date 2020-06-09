@@ -27,7 +27,12 @@ module.exports = {
         brand: '#FA4338',
         garnet: '#A00C1F',
         carbon: '#3F4450',
+        carbon80: '#646974',
         carbon60: '#7E8391',
+        carbon60: '#7E8391',
+        carbon40: '#999FAC',
+        carbon20: '#D7D8DE',
+        carbon10: '#E9EAF2',
         arctic: '#F6F6F9',
         gem: '#4141A2',
         smoothie: '#FFB0C5',
@@ -35,6 +40,9 @@ module.exports = {
         cilantro: '#21944E',
         pistachio: '#D3D236',
       },
+      lineHeight: {
+        'extra-tight': '0.8'
+      }
     },
   },
   variants: {},

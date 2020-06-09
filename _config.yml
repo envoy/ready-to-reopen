@@ -13,17 +13,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ready to Reopen
+title: Envoy's Ready to Reopen Portal
 email: matt@envoy.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Return to the office guidelines for Envoy.
+  Your one-stop shop for all the info about returning to the workplace.
 baseurl: "" # the subpath of your site, e.g. /blog
+permalink: pretty
 url: "https://readytoreopen.envoy.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter:
+  username: envoy
+  card: summary
+logo: /assets/images/logo.svg
+analytics:
+  google: UA-38976330-13
 links:
-  planning_doc: https://docs.google.com/document/d/1vt-zsQAv49pIi3u5kVx3z-96eRT8tzyHWlWXy77NUdE/edit
-  floorplan: https://app.lucidchart.com/documents/edit/fa53b454-4dcd-41c9-8130-bd40292a6621/0_0
-  asana: https://app.asana.com/share/envoy/rto-plan/78903225373695/1717f77f4eb45f1e0c0bd7f737e227f7
-  slack: https://envoy.slack.com/archives/C012JE0RJCU
+  mobile:
+    ios: https://apps.apple.com/us/app/envoy-your-workplace-app/id983102576
+    google: https://play.google.com/store/apps/details?id=com.envoy.app
 
 # Build settings
 markdown: kramdown
@@ -33,6 +39,7 @@ plugins:
   - jekyll-purgecss
   - jekyll-redirect-from
   - jekyll-get-json
+  - jekyll-seo-tag
 
 # Fetch data from our Google Sheet
 jekyll_get_json:

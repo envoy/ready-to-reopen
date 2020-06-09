@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Buildings</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 31 30 31 30 0 0 0"></polygon>
+    </defs>
+    <g id="Company" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-1098.000000, -1089.000000)">
+            <g id="Photo" transform="translate(0.000000, 607.000000)">
+                <g id="NY" transform="translate(994.000000, 482.000000)">
+                    <g id="Buildings" transform="translate(104.000000, 0.000000)">
+                        <path d="M28,29 L13,29 L13,7 L13,2 L28,2 L28,29 Z M2,29 L11,29 L11,8 L2,8 L2,29 Z M29,0 L12,0 C11.448,0 11,0.448 11,1 L11,6 L1,6 C0.448,6 0,6.448 0,7 L0,30 C0,30.552 0.448,31 1,31 L12,31 L29,31 C29.552,31 30,30.552 30,30 L30,1 C30,0.448 29.552,0 29,0 Z" id="Fill-1" fill="#3F4450"></path>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <polygon id="Fill-3" fill="#3F4450" mask="url(#mask-2)" points="5 14 8 14 8 11 5 11"></polygon>
+                        <polygon id="Fill-5" fill="#3F4450" mask="url(#mask-2)" points="16 8 19 8 19 5 16 5"></polygon>
+                        <polygon id="Fill-6" fill="#3F4450" mask="url(#mask-2)" points="22 8 25 8 25 5 22 5"></polygon>
+                        <polygon id="Fill-7" fill="#3F4450" mask="url(#mask-2)" points="5 20 8 20 8 17 5 17"></polygon>
+                        <polygon id="Fill-8" fill="#3F4450" mask="url(#mask-2)" points="16 14 19 14 19 11 16 11"></polygon>
+                        <polygon id="Fill-9" fill="#3F4450" mask="url(#mask-2)" points="22 14 25 14 25 11 22 11"></polygon>
+                        <polygon id="Fill-10" fill="#3F4450" mask="url(#mask-2)" points="5 26 8 26 8 23 5 23"></polygon>
+                        <polygon id="Fill-11" fill="#3F4450" mask="url(#mask-2)" points="16 20 19 20 19 17 16 17"></polygon>
+                        <polygon id="Fill-12" fill="#3F4450" mask="url(#mask-2)" points="22 20 25 20 25 17 22 17"></polygon>
+                        <polygon id="Fill-13" fill="#3F4450" mask="url(#mask-2)" points="16 26 19 26 19 23 16 23"></polygon>
+                        <polygon id="Fill-14" fill="#3F4450" mask="url(#mask-2)" points="22 26 25 26 25 23 22 23"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

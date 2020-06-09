@@ -4,9 +4,10 @@
   {% assign title = site.data.phases.values[1][phase_column] %}
   {% assign color = site.data.phases.values[2][phase_column] %}
 
-  <a class="flex-1 p-4 rounded hover:shadow-lg shadow" style="background-color: {{ color }}" href="/phases/{{ i }}">
-    <h3 class="text-xl text-carbon mb-1">Phase {{ i }}</h3>
-    <p class="text-base text-carbon leading-tight">{{ title }}</p>
+  <a class="flex-1 p-4 rounded hover:shadow-lg shadow bg-white" href="/phases/{{ i }}">
+    {% include phase-badge.html id=i color=color %}
+    <h3 class="text-lg text-carbon leading-tight">{{ title }}</h3>
+    <p class="font-normal text-base self-end">Details</p>
   </a>
 {% endfor %}
 </div>

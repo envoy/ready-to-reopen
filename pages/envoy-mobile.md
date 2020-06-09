@@ -1,5 +1,5 @@
 ---
-layout: full
+layout: content-page
 title: "Install Envoy Mobile"
 ---
 
@@ -8,7 +8,7 @@ title: "Install Envoy Mobile"
 To help us keep the office safe and ensure those who come in can keep a safe distance from others, all employees will now need to check in using Envoy before visiting the office. The Envoy mobile app makes this process quick and completely touchless.
 
 #### Download and login
-To start, download the Envoy mobile app in the [Apple App Store](https://apps.apple.com/us/app/envoy-your-workplace-app/id983102576) or [Google Play Store](https://play.google.com/store/apps/details?id=com.envoy.app).
+To start, download the Envoy mobile app in the [Apple App Store]({{ site.links.mobile.ios }}) or [Google Play Store]({{ site.links.mobile.google }}).
 
 Once in the app, sign up using your work email and choose the office where you plan to work. You can always change this later.
 

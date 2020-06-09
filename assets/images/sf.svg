@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="29px" viewBox="0 0 32 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Company" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="About" transform="translate(-832.000000, -1090.000000)" stroke="#3F4450" stroke-width="2">
+            <g id="Photo" transform="translate(0.000000, 607.000000)">
+                <g id="SF" transform="translate(728.000000, 484.000000)">
+                    <g id="Icon" transform="translate(105.000000, 0.000000)">
+                        <path d="M7,8 L7,27" id="Stroke-1" stroke-linecap="round"></path>
+                        <path d="M23,8 L23,27" id="Stroke-3" stroke-linecap="round"></path>
+                        <path d="M0,22 L30,22" id="Stroke-5" stroke-linecap="round"></path>
+                        <path d="M23,8 C23,12.418 19.418,16 15,16 C10.582,16 7,12.418 7,8" id="Stroke-7" stroke-linecap="round"></path>
+                        <path d="M30,15.9385 C26.054,15.4465 23,12.0805 23,8.0005" id="Stroke-9" stroke-linecap="round"></path>
+                        <path d="M7,8 C7,12.08 3.946,15.446 0,15.938" id="Stroke-11" stroke-linecap="round"></path>
+                        <path d="M26,9 L26.497,9 C27.879,9 29,7.814 29,6.353 C29,5.257 28.37,4.315 27.471,3.914 L27.485,3.923 C27.489,3.852 27.491,3.778 27.491,3.706 C27.491,1.659 25.925,0 23.994,0 C22.648,0 21.48,0.805 20.895,1.984 L20.895,1.985 C20.437,1.418 19.756,1.059 18.997,1.059 C17.617,1.059 16.499,2.244 16.499,3.706 C15.119,3.706 14,4.891 14,6.353 C14,7.814 15.119,9 16.499,9 L20,9" id="Stroke-13"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

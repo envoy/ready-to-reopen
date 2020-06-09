@@ -1,0 +1,9 @@
+{% if include.color contains "/" %}
+  {% assign color = include.color | split: "/" %}
+{% else %}
+  {% assign color = include.color, false | split: "," %}
+{% endif %}
+
+<p class=" phase-badge tracking-widest text-sm text-carbon uppercase font-semibold mb-4 mb-1 rounded-full bg-arctic px-3 pt-1 pb-0 mb-4 inline-block {{ include.css }}" style="background-color: {{ color[0] }}; {% if color[1] %}color: {{ color[1] }}{% endif %}">
+  Phase {{ include.id }}
+</p>

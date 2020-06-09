@@ -1,18 +1,18 @@
 ---
-layout: default
-title: Return to the Office
+layout: full
+title: Welcome
 ---
 
 <div id="content" class="w-full">
 
-  <div class="w-full flex">
+  <div class="w-full flex max-w-6xl m-auto">
     <div class="w-2/3 flex-auto">
-      <h1 class="text-8xl text-brand leading-none mb-4">Ready to Reopen</h1>
-      <p class="text-4xl text-carbon60 leading-tight">Your one-stop shop for all the info about returning to the workplace.</p>
+      <h1 class="text-8xl text-carbon leading-extra-tight mb-12">Ready to reopen</h1>
+      <p class="text-4xl text-carbon60 leading-tight">Your one-stop shop for all the info about returning to the workplace</p>
     </div>
 
-    <div class="w-1/3 flex-auto border-2 border-carbon20 p-8 rounded-lg">
-      <h3>Current status</h3>
+    <div class="w-1/3 flex-auto border-2 border-carbon20 p-0 rounded-lg">
+      <h3 class="text-carbon p-8 pb-2">Current status</h3>
 
       {% for phases_hash in site.data.current_phases.values offset: 1 %}
         {% assign phase_id = phases_hash[1] %}
@@ -20,84 +20,58 @@ title: Return to the Office
         {% assign title = site.data.phases.values[1][phase_column] %}
         {% assign color = site.data.phases.values[2][phase_column] %}
 
-        <div class="mt-4 border-arctic border-t-2 mt-6 pt-6">
-          <h4 class="text-lg text-carbon">{{ phases_hash[0] }}</h4>
-          <a href="/phases/{{ phases_hash[1] }}" style="background-color: {{ color }}" class="rounded-md text-carbon p-2 px-4 align-middle inline-block font-semibold">
-            Phase {{ phases_hash[1] }}
-          </a>
-          <span class="ml-4">{{ title }}</span>
-        </div>
+        <a class="border-arctic block border-t-2 pt-8 py-4 px-8 hover:shadow-lg" href="/phases/{{ phases_hash[1] }}">
+          <h4 class="tracking-widest text-sm text-carbon60 uppercase font-semibold mb-2">
+            <img class="inline mr-2 mb-2" height="22" width="22" style="opacity: 0.75" src="/assets/images/{{ phases_hash[2] }}.svg">
+            {{ phases_hash[0] }}
+          </h4>
+
+          {% include phase-badge.html id=phase_id color=color %}
+          <span class="ml-2 font-semibold text-carbon">{{ title }}</span>
+        </a>
       {% endfor %}
     </div>
   </div>
 
-  <div class="border-t-2 border-arctic pt-16 mt-24 md:mt-24">
-    <h3>Our phased approach</h3>
-    <p>Our return to the office will happen in phases over the next 6–9 months. Each phase has multiple criteria defined, including triggers, timelines, and guidelines.</p>
+  <div class="py-24 my-24 md:mt-24 bg-arctic">
+    <div class="max-w-6xl m-auto">
+      <h3 class="text-carbon md:text-4xl lg:text-5xl leading-10 lg:leading-13 mb-8">Our phased approach</h3>
+      <p>Our return to the office will happen in phases over the next 6–9 months. Each phase has multiple criteria defined, including triggers, timelines, and guidelines.</p>
 
-    {% include phase-bar.html %}
-  </div>
-
-  <div class="border-t-2 border-arctic pt-16 mt-24 md:mt-24">
-    <h3 class="text-center text-carbon60 uppercase text-2xl tracking-widest mb-8">Helpful resources</h3>
-
-    <div class="flex justify-between space-x-4">
-
-      <div class="flex-1 hover:shadow-lg mb-8 p-6 shadow rounded bg-white border border-solid border-white text-carbon">
-        <img src="https://envoy.com/images/covid/phone-icon.svg" alt=" logo" class="mb-4 inline align-baseline" style="height: 40px">
-        <h4 class="text-lg text-carbon mb-2">Install Envoy Mobile</h4>
-        <p class="text-carbon description-text font-normal text-base leading-1.5625">
-          We're using Envoy Protect to conduct daily pre-screening of all employees. Be sure you download the latest version of Envoy's mobile app.
-        </p>
-        <p class="font-normal text-base">
-          <a href="https://apps.apple.com/us/app/envoy-your-workplace-app/id983102576">iPhone</a>
-          &middot;
-          <a href="https://play.google.com/store/apps/details?id=com.envoy.app">Android</a>
-        </p>
-      </div>
-
-      <div class="flex-1 hover:shadow-lg mb-8 p-6 ml-8 shadow rounded bg-white border border-solid border-white text-carbon">
-        <img src="https://envoy.com/images/products/visitors/icons/24-document-red.svg" alt=" logo" class="mb-4 inline align-baseline" style="height: 40px">
-        <h4 class="text-lg text-carbon mb-2">Read the full plan</h4>
-        <p class="text-slate description-text font-normal text-base leading-1.5625">
-          This document includes our decision-making process, communications copy, floorplan layouts, timelines, and resources.
-        </p>
-        <p class="font-normal text-base">
-          <a href="{{ site.links.planning_doc }}" target="_blank">
-            View in Google Docs &rarr;
-          </a>
-        </p>
-      </div>
-
-      <div class="flex-1 hover:shadow-lg mb-8 p-6 ml-8 shadow rounded bg-white border border-solid border-white text-carbon">
-        <img src="https://envoy.com/images/products/visitors/icons/24-document-red.svg" alt=" logo" class="mb-4 inline align-baseline" style="height: 40px">
-        <h4 class="text-lg text-carbon mb-2">Where do I sit?</h4>
-        <p class="text-slate description-text font-normal text-base leading-1.5625">
-          To maintain social distance, you might not be able to sit in your old desk. Explore the floor plan to better understand the workstation layout.
-        </p>
-        <p class="font-normal text-base">
-          <a href="{{ site.links.floorplan }}" target="_blank">
-            View in Lucidcharts &rarr;
-          </a>
-        </p>
-      </div>
-
-      <div class="flex-1 hover-shadow mb-8 p-6 ml-8 shadow rounded bg-white border border-solid border-white text-carbon">
-        <img src="https://envoy.com/images/covid/sparkle-icon.svg" alt=" logo" class="mb-4 inline align-baseline" style="height: 40px">
-        <h4 class="text-lg text-carbon mb-2">Get answers</h4>
-        <p class="text-slate description-text font-normal text-base leading-1.5625">
-          Need more info? Have a question? Want to see the current status of things?
-        </p>
-        <p class="font-normal text-base space-y-1">
-          <a class="block" href="{{ site.links.slack }}">#back-to-the-office</a>
-          <a class="block" href="mailto:team-hr@envoy.com">team-hr@envoy.com</a>
-          <a class="block" href="{{ site.links.asana }}">Asana project tracker</a>
-        </p>
-      </div>
+      {% include phase-bar.html %}
     </div>
-
   </div>
 
+  <div class="pt-8 max-w-6xl m-auto">
+    <p class="tracking-widest text-sm text-carbon40 uppercase font-semibold mb-4">
+      Helpful resources
+    </p>
+    <h3 class="text-carbon md:text-4xl lg:text-5xl leading-10 lg:leading-13 mb-12">
+      Get ready to return
+    </h3>
+
+    <div class="grid grid-cols-4 gap-12 row-gap-24">
+
+      {% for resource in site.data.resources %}
+      <div class="text-carbon">
+        <span class="icon-wrapper flex justify-center items-center rounded-full bg-arctic w-12 h-12 mb-4">
+          <img class="relative" height="22" width="22" style="" src="{{ resource.icon }}">
+        </span>
+
+        <h4 class="text-lg font-semibold text-carbon mb-2">{{ resource.title }}</h4>
+        <p class="text-carbon60 description-text font-normal text-base leading-1.5625">
+          {{ resource.content }}
+        </p>
+        <p class="font-normal text-base mt-4">
+          <a href="{{ resource.url }}" target="_blank">
+            {{ resource.cta }}
+          </a>
+        </p>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
 </div>
 
 <!-- Things to add:

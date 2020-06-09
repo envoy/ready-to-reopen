@@ -1,5 +1,5 @@
 ---
-layout: full
+layout: content-page
 title: Health & Wellness
 ---
 

@@ -30,11 +30,11 @@ h2 {
 }
 
 h3 {
-  @apply text-carbon font-semibold m-0 mb-4 leading-none text-4xl;
+  @apply text-carbon60 font-semibold m-0 mb-4 leading-none text-4xl;
 }
 
 h4 {
-  @apply text-carbon60 font-semibold m-0 mb-4 leading-tight text-2xl;
+  @apply text-carbon font-bold m-0 mb-4 leading-tight text-2xl;
 }
 
 h5 {
@@ -140,7 +140,7 @@ p {
   @apply text-lg my-4 mb-8 list-disc list-outside pl-8;
 }
 
-#content p + p {
+#phases p + p {
   @apply mt-8;
 }
 
