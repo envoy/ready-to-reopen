@@ -140,6 +140,10 @@ p {
   @apply text-lg my-4 mb-8 list-disc list-outside pl-8;
 }
 
+.gsheet-content ol {
+  @apply text-lg my-4 mb-8 list-decimal list-outside pl-8;
+}
+
 #phases p + p {
   @apply mt-8;
 }

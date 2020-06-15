@@ -5,14 +5,14 @@ title: Welcome
 
 <div id="content" class="w-full">
 
-  <div class="w-full flex max-w-6xl m-auto">
-    <div class="w-2/3 flex-auto">
-      <h1 class="text-8xl text-carbon leading-extra-tight mb-12">Ready to reopen</h1>
-      <p class="text-4xl text-carbon60 leading-tight">Your one-stop shop for all the info about returning to the workplace</p>
+  <div class="w-full md:flex max-w-6xl m-auto p-12 md:p-0">
+    <div class="w-full md:w-2/3 md:flex-auto mb-12 md:mb-0">
+      <h1 class="text-8xl text-carbon leading-extra-tight mb-4 md:mb-12">Ready to reopen</h1>
+      <p class="text-3xl md:text-4xl text-carbon60 leading-tight">Your one-stop shop for all the info about returning to the workplace</p>
     </div>
 
-    <div class="w-1/3 flex-auto border-2 border-carbon20 p-0 rounded-lg">
-      <h3 class="text-carbon p-8 pb-2">Current status</h3>
+    <div class="w-full md:w-1/3 md:flex-auto border border-carbon10 p-0 rounded-lg shadow">
+      <h3 class="text-carbon p-8 pb-2 text-2xl md:text-4xl">Current status</h3>
 
       {% for phases_hash in site.data.current_phases.values offset: 1 %}
         {% assign phase_id = phases_hash[1] %}
@@ -20,7 +20,7 @@ title: Welcome
         {% assign title = site.data.phases.values[1][phase_column] %}
         {% assign color = site.data.phases.values[2][phase_column] %}
 
-        <a class="border-arctic block border-t-2 pt-8 py-4 px-8 hover:shadow-lg" href="/phases/{{ phases_hash[1] }}">
+        <a class="border-arctic block border-t-2 pt-8 py-4 px-8 hover:bg-arctic" href="/phases/{{ phases_hash[1] }}">
           <h4 class="tracking-widest text-sm text-carbon60 uppercase font-semibold mb-2">
             <img class="inline mr-2 mb-2" height="22" width="22" style="opacity: 0.75" src="/assets/images/{{ phases_hash[2] }}.svg">
             {{ phases_hash[0] }}
@@ -33,7 +33,7 @@ title: Welcome
     </div>
   </div>
 
-  <div class="py-24 my-24 md:mt-24 bg-arctic">
+  <div class="py-24 my-24 px-8 md:px-8 md:mt-24 bg-arctic">
     <div class="max-w-6xl m-auto">
       <h3 class="text-carbon md:text-4xl lg:text-5xl leading-10 lg:leading-13 mb-8">Our phased approach</h3>
       <p>Our return to the office will happen in phases over the next 6–9 months. Each phase has multiple criteria defined, including triggers, timelines, and guidelines.</p>
@@ -42,7 +42,7 @@ title: Welcome
     </div>
   </div>
 
-  <div class="pt-8 max-w-6xl m-auto">
+  <div class="pt-8 max-w-6xl m-auto p-8 md:p-0">
     <p class="tracking-widest text-sm text-carbon40 uppercase font-semibold mb-4">
       Helpful resources
     </p>
@@ -50,10 +50,10 @@ title: Welcome
       Get ready to return
     </h3>
 
-    <div class="grid grid-cols-4 gap-12 row-gap-24">
+    <div class="md:grid grid-cols-4 gap-12 row-gap-24">
 
       {% for resource in site.data.resources %}
-      <div class="text-carbon">
+      <div class="text-carbon mb-8 md:mb-0">
         <span class="icon-wrapper flex justify-center items-center rounded-full bg-arctic w-12 h-12 mb-4">
           <img class="relative" height="22" width="22" style="" src="{{ resource.icon }}">
         </span>
@@ -63,7 +63,7 @@ title: Welcome
           {{ resource.content }}
         </p>
         <p class="font-normal text-base mt-4">
-          <a href="{{ resource.url }}" target="_blank">
+          <a href="{{ resource.url }}" target="{{ resource.target }}">
             {{ resource.cta }}
           </a>
         </p>

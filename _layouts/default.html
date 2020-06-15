@@ -20,7 +20,7 @@
     <header class="max-w-6xl m-auto w-full flex justify-between md:mt-8 p-4 xl:px-0 fixed md:relative top-0 bg-white md:bg-transparent z-10 border-b pb-4">
       <a href="/">
         <img src="/assets/images/logo.svg" class="inline-block mr-2" alt="Envoy" />
-        <span class="text-lg align-bottom text-carbon ml-2 pl-4 border-carbon20 border-l inline-block">Ready to Reopen</span>
+        <span class="text-lg align-bottom text-carbon ml-2 pl-4 border-carbon20 border-l md:inline-block hidden">Ready to Reopen</span>
       </a>
       <ul class="flex relative list-none" style="top: 2px;">
         {% for nav in site.data.navigation %}
@@ -29,11 +29,11 @@
       </ul>
     </header>
 
-    <div id="wrapper" class="{% unless layout.fullwidth %}max-w-6xl {% endunless %} m-auto w-full flex-none md:flex mt-40 md:mt-32 px-4 xl:px-0">
+    <div id="wrapper" class="{% unless layout.fullwidth %}max-w-6xl {% endunless %} m-auto w-full flex-none md:flex mt-20 md:mt-32 md:px-4 xl:px-0">
       {{ content }}
     </div>
 
-    <footer class="max-w-6xl m-auto w-full border-arctic border-t-2 pt-8 mt-24 pb-16 text-sm text-carbon60">
+    <footer class="max-w-6xl m-auto w-full border-arctic border-t-2 pt-8 mt-24 pb-16 text-sm text-carbon60 px-8 md:px-0">
       Copyright &copy; 2020 <a class="text-carbon60 hover:text-brand" href="http://envoy.com">Envoy</a>.
       The material in this work is licensed under a <a rel="license" class="text-carbon60 hover:text-brand" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     </footer>

@@ -1,5 +1,5 @@
 - title: Install Envoy Mobile
-  icon: https://envoy.com/images/products/visitors/icons/24-badge-red.svg
+  icon: /assets/images/icons-100_carbon-f-24_iPhone.svg
   url: /pages/envoy-mobile
   content: "We're using Envoy Protect to conduct daily pre-screening of all employees."
   cta: Download now
@@ -9,12 +9,14 @@
   url: https://docs.google.com/document/d/1vt-zsQAv49pIi3u5kVx3z-96eRT8tzyHWlWXy77NUdE/edit
   content: This document includes our decision-making process, comms, timelines, and resources.
   cta: View in Google Docs &rarr;
+  target: _blank
 
 - title: Where do I sit?
-  icon: https://envoy.com/images/products/visitors/icons/24-custom-red.svg
+  icon: /assets/images/icons-100_carbon-f-24_rooms.svg
   url: https://app.lucidchart.com/documents/edit/fa53b454-4dcd-41c9-8130-bd40292a6621/0_0
   content: Explore the floor plan to better understand the workstation layout.
   cta: View in Lucidcharts &rarr;
+  target: _blank
 
 - title: Health & Wellness
   icon: https://envoy.com/images/products/visitors/icons/24-pulse-red.svg
@@ -27,21 +29,24 @@
   url: https://app.asana.com/share/envoy/rto-plan/78903225373695/1717f77f4eb45f1e0c0bd7f737e227f7
   content: Everything is tracked in Asana and kept up-to-date.
   cta: See task progress &rarr;
+  target: _blank
 
 - title: Slack
-  icon: https://envoy.com/images/integrations/slack.svg
+  icon: /assets/images/icons-100_carbon-f-24_speech.svg
   url: https://envoy.slack.com/archives/C012JE0RJCU
   content: The fastest way to get your questions answered.
   cta: "#back-to-the-office"
+  target: _blank
 
 - title: Employee FAQ's
-  icon: https://envoy.com/images/products/visitors/icons/24-prereg-red.svg
+  icon: /assets/images/icons-100_carbon-f-24_info.svg
   url: https://docs.google.com/document/d/17_tJ0gmv4gr9bVx1BSQLQKGdZ7vy2yRX1qez92quP18/edit
   content: In-depth resources and answers from HR.
   cta: View in Google Docs &rarr;
+  target: _blank
 
 - title: Your HR Team
-  icon: https://envoy.com/images/products/visitors/icons/24-sparkles-red.svg
+  icon: /assets/images/icons-100_carbon-f-24_envelope.svg
   url: "mailto: team-hr@envoy.com"
   content: "Have a question that you'd like to remain private?"
-  cta: Email team-hr
+  cta: Email team-hr &rarr;
