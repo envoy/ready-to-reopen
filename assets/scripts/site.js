@@ -9,7 +9,7 @@ function setCurrentNav(s) {
     $('header.phase-nav').addClass('opacity-0');
   }
   $(".js-category").each(function() {
-    var offset = ($(this).position().top) - 145;
+    var offset = ($(this).position().top) - 50;
     var id = $(this).attr("id");
     var title = $(this).children('.category-title').html();
     if(scrollVal >= offset) {
@@ -35,19 +35,6 @@ function setCurrentNav(s) {
   });
 }
 
-$(".js-parent .js-nav-link").click(function(e) {
-  e.preventDefault();
-  $('.js-parent').removeClass('js-open');
-  $(this).addClass('js-open');
-});
-
-$(".js-nav-link").click(function(e) {
-  e.preventDefault();
-  var aid = $(this).attr("href");
-  $('html,body').animate({scrollTop: $(aid).offset().top},'fast');
-  setCurrentNav(true);
-});
-
 $(document).scroll(function() {
   setCurrentNav(false);
   clearTimeout($.data(this, 'scrollTimer'));
@@ -58,36 +45,43 @@ $(document).scroll(function() {
 
 var mobileNavOpen = false;
 
-$(".js-mobile-nav").click(function() {
-  $(this).toggleClass('js-open');
-  mobileNavHide = anime({
-    targets: '.sidebar-nav',
-    height: 0,
-    opacity: 0,
-    overflow: 'hidden',
-    easing: 'easeInOutQuad',
-    duration: 200,
-    autoplay: false
+$(function() {
+  $(".js-mobile-nav").click(function() {
+    $(this).toggleClass('js-open');
+    mobileNavHide = anime({
+      targets: '.sidebar-nav',
+      height: 0,
+      opacity: 0,
+      overflow: 'hidden',
+      easing: 'easeInOutQuad',
+      duration: 200,
+      autoplay: false
+    });
+
+    mobileNavShow = anime({
+      targets: '.sidebar-nav',
+      height: '100%',
+      opacity: 1,
+      overflow: 'visible',
+      easing: 'easeInOutQuad',
+      duration: 200,
+      autoplay: false
+    });
+
+    if (!mobileNavOpen) {
+      mobileNavShow.play();
+      mobileNavOpen = true;
+    } else {
+      mobileNavHide.play();
+      mobileNavOpen = false;
+    }
   });
 
-  mobileNavShow = anime({
-    targets: '.sidebar-nav',
-    height: '100%',
-    opacity: 1,
-    overflow: 'visible',
-    easing: 'easeInOutQuad',
-    duration: 200,
-    autoplay: false
+  $(".js-parent .js-nav-link").click(function(e) {
+    e.preventDefault();
+    $('.js-parent').removeClass('js-open');
+    $(this).addClass('js-open');
   });
-
-  if (!mobileNavOpen) {
-    mobileNavShow.play();
-    mobileNavOpen = true;
-  } else {
-    mobileNavHide.play();
-    mobileNavOpen = false;
-  }
-});
 
 var clipboardLinks = new ClipboardJS('.js-copy-link');
 var clipboardHex = new ClipboardJS('.js-copy-hex');
