@@ -5,7 +5,7 @@
   {% assign color = site.data.phases.values[2][phase_column] %}
 
   <a class="flex-1 m-0 p-4 rounded hover:shadow-lg shadow bg-white" href="/phases/{{ i }}">
-    {% include phase-badge.html id=i color=color %}
+    {% include phase-badge.html id=i color=color css="mb-4" %}
     <h3 class="text-lg text-carbon leading-tight">{{ title }}</h3>
     <p class="font-normal text-base self-end">Details</p>
   </a>

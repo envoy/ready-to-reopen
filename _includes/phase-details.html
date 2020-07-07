@@ -1,7 +1,7 @@
 {% assign phase_column = page.phase | plus: 2 %}
 {% assign phase_color = site.data.phases.values[2][phase_column] %}
 
-{% include phase-badge.html id=page.phase color=phase_color css="text-xl px-4" %}
+{% include phase-badge.html id=page.phase color=phase_color css="text-xl px-4 mb-4" %}
 <h2>
   {{ site.data.phases.values[1][phase_column]}}
   {% if current_phase contains page.phase %}
