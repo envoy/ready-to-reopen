@@ -80,3 +80,11 @@ $ wrangler preview -e production
 ```bash
 $ wrangler publish -e production
 ```
+
+## License
+This code is made available for others to use under the [BSD 2-Clause license](LICENSE.md).
+
+### Footer text
+If publishing your own Ready to Reopen portal for your company, you must retain Envoy's copyright in the source code but you may modify the footer copyright notice that is displayed on the site. The content in our Ready to Reopen plan is offered under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), but we recognize that some companies may not make their plans available under an open license. If you choose to change the content license, we ask that you retain a note in the footer or elsewhere on the page that links back to our public portal. This would be satisfactory:
+
+> This site was adapted from Envoy's [Ready to Reopen](https://readytoreopen.envoy.com) portal.
