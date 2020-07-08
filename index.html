@@ -14,11 +14,11 @@ title: Welcome
     <div class="w-full md:w-1/3 md:flex-auto border border-carbon10 p-0 rounded-lg shadow">
       <h3 class="text-carbon p-8 pb-2 text-2xl md:text-4xl">Current status</h3>
 
-      {% for phases_hash in site.data.current_phases.values offset: 1 %}
+      {% for phases_hash in site.data.phases.valueRanges[1].values offset: 1 %}
         {% assign phase_id = phases_hash[1] %}
         {% assign phase_column = phase_id | plus: 2 %}
-        {% assign title = site.data.phases.values[1][phase_column] %}
-        {% assign color = site.data.phases.values[2][phase_column] %}
+        {% assign title = site.data.phases.valueRanges[0].values[1][phase_column] %}
+        {% assign color = site.data.phases.valueRanges[0].values[2][phase_column] %}
 
         <a class="border-arctic block border-t-2 pt-8 py-4 px-8 hover:bg-arctic" href="/phases/{{ phases_hash[1] }}">
           <h4 class="tracking-widest text-sm text-carbon60 uppercase font-semibold mb-2">

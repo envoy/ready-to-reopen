@@ -1,18 +1,18 @@
 {% assign phase_column = page.phase | plus: 2 %}
-{% assign phase_color = site.data.phases.values[2][phase_column] %}
+{% assign phase_color = site.data.phases.valueRanges[0].values[2][phase_column] %}
 
 {% include phase-badge.html id=page.phase color=phase_color css="text-xl px-4 mb-4" %}
 <h2>
-  {{ site.data.phases.values[1][phase_column]}}
+  {{ site.data.phases.valueRanges[0].values[1][phase_column]}}
   {% if current_phase contains page.phase %}
     <span class="rounded-md bg-cilantro text-white text-sm p-2 py-1 align-middle ml-2 uppercase">Current Phase</span>
   {% endif %}
 </h2>
 <p class="mb-8 text-2xl" id="phase-intro-text">
-  {{ site.data.phases.values[3][phase_column] }}
+  {{ site.data.phases.valueRanges[0].values[3][phase_column] }}
 </p>
 
-{% for phases_hash in site.data.phases.values offset: 4 %}
+{% for phases_hash in site.data.phases.valueRanges[0].values offset: 4 %}
 <div class="my-5">
   {% assign category = phases_hash[0] %}
   {% assign title = phases_hash[1] %}

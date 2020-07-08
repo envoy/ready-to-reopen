@@ -10,6 +10,5 @@ analytics:
 # Replace SHEET_ID and GOOGLE_API_KEY with the values from your environment.
 jekyll_get_json:
   - data: phases
-    json: "https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values/'Return+Phases'?key=GOOGLE_API_KEY&majorDimension=ROWS"
-  - data: current_phases
-    json: "https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values/'Current+Phases'?key=GOOGLE_API_KEY&majorDimension=ROWS"
+    json: https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values:batchGet?ranges='Return+Phases'&ranges='Current+Phases'&key=GOOGLE_API_KEY&majorDimension=ROWS
+    #                              Google Sheet File ID  ^^^^^^^^                                                            API Key ^^^^^^^^^^^^^^

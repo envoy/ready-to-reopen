@@ -1,8 +1,8 @@
 <div class="mt-8 flex flex-col md:flex-row justify-between md:space-x-4 space-y-4 md:space-y-0">
 {% for i in (0..4) %}
   {% assign phase_column = i | plus: 2 %}
-  {% assign title = site.data.phases.values[1][phase_column] %}
-  {% assign color = site.data.phases.values[2][phase_column] %}
+  {% assign title = site.data.phases.valueRanges[0].values[1][phase_column] %}
+  {% assign color = site.data.phases.valueRanges[0].values[2][phase_column] %}
 
   <a class="flex-1 m-0 p-4 rounded hover:shadow-lg shadow bg-white" href="/phases/{{ i }}">
     {% include phase-badge.html id=i color=color css="mb-4" %}
