@@ -26,7 +26,6 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jekyll-get-json'
   gem 'jekyll-seo-tag'
-  gem 'jekyll-algolia'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
