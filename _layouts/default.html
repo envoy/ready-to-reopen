@@ -33,9 +33,15 @@
       {{ content }}
     </div>
 
-    <footer class="max-w-6xl m-auto w-full border-arctic border-t-2 pt-8 mt-24 pb-16 text-sm text-carbon60 px-8 md:px-0">
-      Copyright &copy; 2020 <a class="text-carbon60 hover:text-brand" href="http://envoy.com">Envoy</a>.
-      The material in this work is licensed under a <a rel="license" class="text-carbon60 hover:text-brand" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    <footer class="max-w-6xl m-auto w-full border-arctic border-t-2 pt-8 mt-24 pb-16 text-sm text-carbon60 px-8 md:px-0 flex justify-between">
+      <p class="text-sm">
+        Copyright &copy; 2020 <a class="text-carbon60 hover:text-brand" href="http://envoy.com">Envoy</a>.
+        The material in this work is licensed under a <a rel="license" class="text-carbon60 hover:text-brand" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+      </p>
+
+      <a href="https://github.com/envoy/ready-to-reopen" class="text-carbon60 hover:text-brand text-sm" target="_blank">
+        <img class="inline-block mr-1" style="opacity: 0.5;" height="18" width="18" src="/assets/images/GitHub-Mark-32px.png"> Source code available on GitHub
+      </a>
     </footer>
 
     {% for javascript in page.scripts %}
