@@ -1,0 +1,15 @@
+#
+# Copy this file to _config.private.yml and update the values below with the info specific to your plan.
+#
+
+# Google Analytics ID, if you want to track site traffic
+analytics:
+  google: UA-12345678-01
+
+# The Google Sheets source file(s) that contains the details about your reopening phases.
+# Replace SHEET_ID and GOOGLE_API_KEY with the values from your environment.
+jekyll_get_json:
+  - data: phases
+    json: "https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values/'Return+Phases'?key=GOOGLE_API_KEY&majorDimension=ROWS"
+  - data: current_phases
+    json: "https://sheets.googleapis.com/v4/spreadsheets/SHEET_ID/values/'Current+Phases'?key=GOOGLE_API_KEY&majorDimension=ROWS"

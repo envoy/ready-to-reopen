@@ -25,7 +25,7 @@ twitter:
   card: summary
 logo: /assets/images/logo.svg
 analytics:
-  google: UA-38976330-13
+  google: null
 links:
   mobile:
     ios: https://apps.apple.com/us/app/envoy-your-workplace-app/id983102576
@@ -44,22 +44,10 @@ plugins:
 # Fetch data from our Google Sheet
 jekyll_get_json:
   - data: phases
-    json: "https://sheets.googleapis.com/v4/spreadsheets/1wQd772XHgXUodEa1hrsO-HLRIN-wWnZQepq0m-p64Nk/values/'Return+Phases'?key=AIzaSyCk7XKPyDQfZCoLPC84h9986LlJlw0a-vo&majorDimension=ROWS"
+    json: null
   - data: current_phases
-    json: "https://sheets.googleapis.com/v4/spreadsheets/1wQd772XHgXUodEa1hrsO-HLRIN-wWnZQepq0m-p64Nk/values/'Current+Phases'?key=AIzaSyCk7XKPyDQfZCoLPC84h9986LlJlw0a-vo&majorDimension=ROWS"
+    json: null
 
 collections:
   phases:
     output: true
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
