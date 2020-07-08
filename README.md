@@ -1,5 +1,7 @@
 # Ready to Reopen Portal
-Jekyll based website for sharing our office reopening plans at [readytoreopen.envoy.com](readytoreopen.envoy.com). The majority of data is fed from a Google Sheet, allowing for easy updating of a fairly complex document by multiple people in the organization.
+Jekyll based website for sharing our office reopening plans at [readytoreopen.envoy.com](https://readytoreopen.envoy.com). The majority of data is fed from a Google Sheet, allowing for easy updating of a fairly complex document by multiple people in the organization.
+
+![Portal preview](https://d.pr/i/jy0enL+)
 
 ## Customizing for your company
 The site pulls data from [this Google Sheet](https://docs.google.com/spreadsheets/d/1wQd772XHgXUodEa1hrsO-HLRIN-wWnZQepq0m-p64Nk/edit?usp=sharing). Since our plan is available to anyone to view, you can open this file and make your own copy by going to **File → Make a copy** in Google Sheets.
