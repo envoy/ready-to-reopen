@@ -39,6 +39,7 @@ module.exports = {
         powder: '#B5DFEB',
         cilantro: '#21944E',
         pistachio: '#D3D236',
+        black: '#000'
       },
       lineHeight: {
         'extra-tight': '0.8'

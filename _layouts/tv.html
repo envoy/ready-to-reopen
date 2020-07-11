@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} &bull; Envoy Ready to Reopen</title>
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/scripts/site.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
+  </head>
+  <body class="text-arctic bg-black h-screen">
+    <div id="wrapper" class="w-full flex justify-center items-center h-full">
+      {{ content }}
+    </div>
+
+    <script>
+    $(function() {
+      setInterval(function() {
+        var time_check = moment().isBetween(moment('{{ site.tv.on_time }}', 'hh:mm'), moment('{{ site.tv.off_time }}', 'hh:mm'))
+        console.log(time_check)
+        $('#wrapper').toggleClass('hidden', !time_check)
+      },
+      10*1000); // Run this every 10 seconds
+    })
+    </script>
+  </body>
+</html>

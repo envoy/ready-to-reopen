@@ -51,3 +51,8 @@ jekyll_get_json:
 collections:
   phases:
     output: true
+
+# For the TV display, when to turn the screen on/off
+tv:
+  on_time: "08:00"
+  off_time: "18:00"
