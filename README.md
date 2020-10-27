@@ -3,6 +3,8 @@ Jekyll based website for sharing our office reopening plans at [readytoreopen.en
 
 ![Portal preview](https://d.pr/i/HD7OxE+)
 
+Looking for resources for your return-to-office plan? Download [Envoy's reopening toolkit](https://envoy.com/content/ebook/ds02/dl/reopening-toolkit-for-workplaces/).
+
 ## Customizing for your company
 The site pulls data from [this Google Sheet](https://docs.google.com/spreadsheets/d/1wQd772XHgXUodEa1hrsO-HLRIN-wWnZQepq0m-p64Nk/edit?usp=sharing). Since our plan is available to anyone to view, you can open this file and make your own copy by going to **File → Make a copy** in Google Sheets.
 
