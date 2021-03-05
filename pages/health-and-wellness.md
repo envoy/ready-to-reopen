@@ -15,4 +15,4 @@ Things you can do to support yourself:
 - Try to do some other activities you enjoy.
 - Connect with others. Talk with people you trust about your concerns and how you are feeling.
 
-**Beginning April 1, 2021, all Envoys will be working remotely permanently. In person interactions will be delegated to telepresence robots and carrier pigeons.**
+**Beginning April 1, 2021, all Envoys will be working remotely permanently. In person interactions will be delegated to telepresence robots and carrier pigeons.
